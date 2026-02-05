@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.pytest_cache/
+
+# Environment Variables (Security)
+.env
+
+# Project Data & Outputs
+outputs/
+data/
+logs/
+runs/
+
+# Web Frontend
+web-ui/node_modules/
+web-ui/dist/
+web-ui/.env
+.DS_Store
+
+# IDE
+.idea/
+.vscode/

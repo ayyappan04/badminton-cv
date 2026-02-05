@@ -1,0 +1,10 @@
+# Train/Val paths (relative to where training command is run or absolute)
+path: ../data/shuttle_dataset  # dataset root dir
+train: images/train  # train images (relative to 'path') 
+val: images/val  # val images (relative to 'path')
+
+# Classes
+names:
+  0: shuttlecock
+
+# Hyperparameters can be adjusted in args, but defaults usually work well.

@@ -1,0 +1,49 @@
+# Default Configuration for Badminton CV System
+
+system:
+  gpu_id: 0
+  use_cuda: true
+  seed: 42
+  output_dir: "outputs"
+  log_level: "INFO"
+
+video:
+  target_resolution: [1280, 720]  # Width, Height
+  processing_fps: 30
+  chunk_duration: 60  # seconds
+
+detection:
+  model_path: "models/yolov8s.pt"
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+  img_size: 640
+  classes:
+    - 0 # person
+    - 39 # racket (often detected as tennis racket/bottle/etc, needs custom training)
+    # Note: Custom classes will be defined after training
+
+tracking:
+  tracker_type: "botsort"
+  track_high_thresh: 0.5
+  track_low_thresh: 0.1
+  new_track_thresh: 0.6
+  track_buffer: 30
+  match_thresh: 0.8
+
+pose:
+  backend: "mmpose"
+  config_file: "models/td-hm_hrnet-w32_8xb64-210e_coco-256x192.py"
+  checkpoint_file: "models/td-hm_hrnet-w32_8xb64-210e_coco-256x192.pth"
+  device: "cuda:0"
+
+rag:
+  db_path: "data/knowledge_base"
+  collection_name: "badminton_coaching"
+  llm_model: "gpt-4"  # or user preference
+
+events:
+  min_rally_duration: 3.0 # seconds
+  shuttle_speed_threshold: 50.0 # km/h, below which might not be a smash
+  smash_speed_threshold: 200.0 # km/h
+  clear_height_threshold: 4.0 # meters
+
