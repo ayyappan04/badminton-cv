@@ -1,4 +1,4 @@
-# Badminton CV (Project In Progress 🚧)
+# Badminton CV (Project In Progress)
 
 ![Project Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
@@ -7,7 +7,7 @@
 
 A comprehensive Computer Vision and AI system for analyzing badminton matches. This project extracts player movements, shuttle trajectories, and generating professional coaching reports using LLMs (Google Gemini).
 
-## 🚀 Features
+## Features
 
 *   **Video Ingestion**: Efficiently processes match videos in chunks.
 *   **Court Calibration**: Automatically detects court lines and maps pixels to real-world meters.
@@ -19,7 +19,7 @@ A comprehensive Computer Vision and AI system for analyzing badminton matches. T
 *   **AI Coach**: Uses **RAG (Retrieval Augmented Generation)** and **Google Gemini 2.5** to generate personalized coaching advice based on match data.
 *   **Web Dashboard**: A modern Dark/Neon UI (React + FastAPI) to upload videos and view results.
 
-## 🛠️ Stack
+## Stack
 
 *   **Core**: Python 3.9+, OpenCV, PyTorch, NumPy
 *   **AI/ML**: Ultralytics YOLOv8, SentenceTransformers
@@ -27,7 +27,7 @@ A comprehensive Computer Vision and AI system for analyzing badminton matches. T
 *   **Backend**: FastAPI, Uvicorn
 *   **Frontend**: React, Vite, TailwindCSS, Lucide Icons
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 *   Python 3.9 or higher
@@ -56,7 +56,7 @@ npm install
 cd ..
 ```
 
-## 🖥️ Usage
+## Usage
 
 ### Running the Web App (Recommended)
 You need two terminal windows:
@@ -82,7 +82,7 @@ To analyze a video file directly from the terminal:
 PYTHONPATH=. python src/main.py analyze data/test/my_match.mp4
 ```
 
-## 🏗️ Project Status (In Progress)
+## Project Status (In Progress)
 - [x] Core Pipeline (Ingest, Detect, Track, Pose)
 - [x] Basic Event Detection (Heuristic)
 - [x] AI Report Generation
