@@ -91,8 +91,8 @@ PYTHONPATH=. python src/main.py analyze data/test/my_match.mp4
 - [ ] **Shot Classification Model**: Upgrading from heuristics to LSTM/Transformers.
 - [ ] **3D Trajectory Reconstruction**.
 
-## 🤝 Contributing
+## Contributing
 This project is currently under active development. Feel free to open issues or submit PRs!
 
-## 📄 License
+## License
 MIT License
